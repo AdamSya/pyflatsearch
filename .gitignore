@@ -162,3 +162,4 @@ output/2019-03-08_5000_flat.png
 output/2019-03-09_5000_1_flat_full.csv
 output/2019-03-09_5000_1_flat_summary.csv
 output/2019-03-09_5000_flat.png
+*.iml
