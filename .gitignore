@@ -17,3 +17,6 @@ data/report_data/style.svg
 data/report_data/table-content.svg
 test/London postcodes.csv
 data/.DS_Store
+*.xml
+.DS_Store
+*.iml
