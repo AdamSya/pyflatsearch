@@ -28,7 +28,7 @@ def user_input():
                  'max_number_bedrooms':1,
                  'furnishTypes':'',
                  'letType':'',
-                 'includeLetAgreed':''}
+                 'includeLetAgreed':'true'}
 
     try:
         city = input('Location: ')
@@ -39,14 +39,14 @@ def user_input():
         pass
 
     try:
-        min_price = input('Property lower price limit in British pounds (integer): ')
+        min_price = input('Property lower price limit in British Pounds (integer): ')
         inputdict['minprice'] = int(min_price)
     except:
         print('Incorrect input. Using the default value of: %d' % inputdict['minprice'])
         pass
 
     try:
-        max_price = int(input('Property upper price limit in British pounds (integer): '))
+        max_price = int(input('Property upper price limit in British Pounds (integer): '))
         inputdict['maxprice'] = int(max_price)
     except:
         print('Incorrect input. Using the default value of: %d' % inputdict['maxprice'])
@@ -61,7 +61,7 @@ def user_input():
     try:
         proptype_dict = {'house': 'Houses', 'flat': 'flat', 'bungalow': 'bungalow', 'land': 'land',
                          'park home': 'park-home', 'student halls': 'private-halls'}
-        proptype = input('Property type ' + str([i for i in proptype_dict]) + ':').lower()
+        proptype = input('Property type ' + str([i for i in proptype_dict]) + ': ').lower()
         if proptype in proptype_dict:
             inputdict['propertytype'] = proptype_dict[proptype]
     except:
@@ -182,6 +182,7 @@ def rightmove_scraper():
 
 def postcode_search():
     """Search rightmove HTML page sources for post codes"""
+    #   Throttled by 100ms between each query to reduce the impact on Rightmove servers.
     print('Retrieving property postcodes... Please wait...')
     retrieved_postcodes = []
     for url in rm['url']:
@@ -309,7 +310,7 @@ def map_plotter():
     selected_properties = pd.merge(selected_properties,avg_d_for_sorting,left_on='district',right_on=avg_d_for_sorting.index).sort_values(by='avgprice')
 
     #   created a simple formula for the marker size
-    plot_markersize = [abs(int(-50*a+150)) for a in selected_properties['distance']]
+    plot_markersize = [abs(int(-40*a+120)) for a in selected_properties['distance']]
     sns.scatterplot(x="price", y="district", hue='district',
                   data=selected_properties,
                   alpha=0.6, edgecolor='none',zorder=4, s=plot_markersize)

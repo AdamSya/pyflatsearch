@@ -21,3 +21,4 @@ data/.DS_Store
 *.iml
 output/
 pyhouse-test.py
+timer.py
