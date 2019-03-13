@@ -14,7 +14,7 @@ To install the packages, please type: `pip3 install <package name>`
 
 ## How to use
 1.  Run <code>pyflatsearch.py</code> in your terminal.
-    ![image-20190313000242524](/Users/adamsyanda/Library/Application Support/typora-user-images/image-20190313000242524.png)
+    ![image-20190313000242524](/data/img/image-20190313000242524.png)
 2.  Type in location for the search. Currently, `London` is the only search location. Press **Enter** to continue to next prompts (*Default value:* `London`).![image-20190313000528085](/Users/adamsyanda/Library/Application Support/typora-user-images/image-20190313000528085.png)
 3.  Type in the minimum property monthly rental price as an integer. For example, for £500pcm type in `500`. *(Default value:* `0`).![image-20190313000630581](/Users/adamsyanda/Library/Application Support/typora-user-images/image-20190313000630581.png)
 4.  Type in the maximum property monthly rental price as an integer. For example, for £1500pcm type in `1500`. (*Default value:* `400`).![image-20190313000751953](/Users/adamsyanda/Library/Application Support/typora-user-images/image-20190313000751953.png)
