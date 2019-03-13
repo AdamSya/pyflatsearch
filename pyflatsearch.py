@@ -39,21 +39,21 @@ def user_input():
         pass
 
     try:
-        min_price = input('Property lower price limit in British Pounds (integer): ')
+        min_price = input('Minimum property rent price (pcm) in British Pounds (integer): ')
         inputdict['minprice'] = int(min_price)
     except:
         print('Incorrect input. Using the default value of: %d' % inputdict['minprice'])
         pass
 
     try:
-        max_price = int(input('Property upper price limit in British Pounds (integer): '))
+        max_price = int(input('Maximum property rent price (pcm) in British Pounds (integer): '))
         inputdict['maxprice'] = int(max_price)
     except:
         print('Incorrect input. Using the default value of: %d' % inputdict['maxprice'])
         pass
 
     try:
-        radius = input('Search area radius (mi; integer): ')
+        radius = input('Increase search radius by (mi; integer): ')
         inputdict['radius'] = int(radius)
     except:
         print('Incorrect input. Using the default value of: %d' % inputdict['radius'])
