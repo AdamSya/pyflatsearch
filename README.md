@@ -1,6 +1,5 @@
 # pyflatsearch
-A data mining and visualisation tool for obtaining current information on property prices in different wards of London
-The script uses package <code>rightmove_webscraper</code> to mine the data from www.rightmove.co.uk and <code>geopandas</code> and <code>matplotlib</code> packages to plot the data on a map.
+A data mining and visualisation tool for obtaining current information on property prices in different wards of London. The script uses package <code>rightmove_webscraper</code> to mine the data from www.rightmove.co.uk and <code>geopandas</code> and <code>matplotlib</code> packages to plot the data on a map.
 
 ## Installation
 
@@ -26,7 +25,7 @@ To install the packages, please type: `pip3 install <package name>`
 4. Type in the maximum property monthly rental price as an integer. For example, for £1500pcm type in `1500`. (*Default value:* `400`).
    ![image-20190313000751953](/data/img/image-20190313000751953.png)
 
-5. Type in the search radius in miles. For example, for a 5 mile radius type in `5`. (*Default value:* `0`)
+5. Type in the search radius in miles. For example, for a 5 mile radius type in `5` (*Default value:* `0`).
    ![image-20190313001450245](/data/img/image-20190313001450245.png)
 
 6. Type in the property type from the following options: `house` `flat` `bungalow` `land` `park home` `student halls` (*Default value:* `flat`).
