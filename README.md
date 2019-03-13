@@ -61,6 +61,9 @@ To install `pyflatsearch` simply download the entire repository.
 
     ![image-20190313010442411](data/img/image-20190313010442411.png)
     
+## Video rundown
+[![asciicast](https://asciinema.org/a/MZkQ6tx6kpfIrMzaVUSS5s1mJ.svg)](https://asciinema.org/a/MZkQ6tx6kpfIrMzaVUSS5s1mJ)
+
 
 ## Future updates
 
