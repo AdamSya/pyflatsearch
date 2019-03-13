@@ -392,7 +392,7 @@ def map_plotter():
                    verticalalignment='top', fontsize=8, color='#555555', fontweight='bold')
     ax[0].annotate('Price range:', xy=(0.022, 0.88), xycoords='figure fraction', horizontalalignment='left',
                    verticalalignment='top', fontsize=8, color='#555555')
-    ax[0].annotate('£0 - %i' % inputdict['maxprice'], xy=(0.17, 0.88), xycoords='figure fraction',
+    ax[0].annotate('£%i - %i' % (inputdict['minprice'],inputdict['maxprice']), xy=(0.17, 0.88), xycoords='figure fraction',
                    horizontalalignment='left',
                    verticalalignment='top', fontsize=8, color='#555555')
     ax[0].annotate('Search radius:', xy=(0.022, 0.86), xycoords='figure fraction', horizontalalignment='left',

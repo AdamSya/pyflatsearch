@@ -11,6 +11,8 @@ The following packages are also required for  `pyflatsearch` to work:
 
 To install the packages, please type: `pip3 install <package name>` 
 
+To install `pyflatsearch` simply download the entire repository.
+
 ## How to use
 1. Run <code>pyflatsearch.py</code> in your terminal.
 
